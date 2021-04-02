@@ -1,0 +1,89 @@
+h1 {
+    color: black;
+}
+
+#dashboard {
+    background-color: rgb(178, 229, 250);
+
+    padding: 0px;
+    margin-top: 50px;
+    margin-left: 80px;
+    height: 100vh;
+    width: 92vw;
+    position: absolute;
+    overflow: hidden;
+    font-family: "Source Sans Pro", serif;
+}
+
+#dashboard-inner {
+    background-color: rgb(218, 242, 254);
+    height: 85vh;
+    width: 68vw;
+    padding: 20px 20px 20px 20px;
+    padding-left: 20%;
+    padding-right: -20%;
+    margin: 30px 30px 30px 30px;
+    border-radius: 3%;
+    display: inline-block;
+    position: relative;
+    font-family: "Source Sans Pro", serif;
+}
+
+/* #button-container {
+    background-color: pink;
+} */
+
+#button1 {
+    background-color: rgb(227, 172, 43);
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: -20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: small;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+
+#button2 {
+    background-color: rgb(249, 28, 133);
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: -20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 700;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+
+#button3 {
+    background-color: rgb(68, 192, 246);
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: -20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 700;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+  
+@media only screen and (max-width: 720px) {
+    html {
+      overflow: hidden;
+    }
+  }
