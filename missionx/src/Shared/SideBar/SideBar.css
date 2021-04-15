@@ -1,0 +1,124 @@
+header {
+    position: absolute;
+    width: 220px;
+  }
+
+  #header .pro-sidebar {
+    height: 100vh;
+  }
+  
+  #header .closemenu {
+    color: rgb(254, 18, 128);
+    /* background-color: rgb(178, 229, 250); */
+    position: absolute;
+    right: 0;
+    
+    z-index: 9999;
+    line-height: 20px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 30px;
+    top: 50vh;
+    cursor: pointer;
+  }
+  #header .pro-sidebar {
+    width: 20%;
+    min-width: 20%;
+    align-items: center;
+    
+  }
+  #header .pro-sidebar.collapsed {
+    width: 80px;
+    min-width: 80px;
+    
+  }
+  #header .pro-sidebar-inner {
+    background-color: rgb(38, 157, 204);
+    box-shadow: 0.5px 0.866px 2px 0px rgba(0, 0, 0, 0.15);
+    
+  }
+  #header .pro-sidebar-inner .pro-sidebar-layout {
+    overflow-y: hidden;
+    
+  }
+
+  /* Space in top part of header */
+  #header .pro-sidebar-inner .pro-sidebar-layout .profilepic {
+    
+    color: #000;  
+  }
+
+  #header .pro-sidebar-inner .pro-sidebar-layout .profilepic .Profile-Pic {
+    align-items: center;
+    padding-left: 120px;
+  }
+
+  #header .pro-sidebar-inner .pro-sidebar-layout .profilepic .Profile-Pic .Collapsed {
+    padding: 0px;
+    align-items: left;
+  }
+
+  /* Sidebar layout  */
+
+  #header .pro-sidebar-inner .pro-sidebar-layout ul {
+    padding: 0px;
+    font-family: "Open Sans", serif;
+    color: white;
+  }
+  #header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item {
+    color: white;
+    margin: 0px 0px;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  #header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item .pro-icon-wrapper {
+    background-color: inherit;
+    color: white;
+    border-radius: 3px;
+  }
+  
+
+  #header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item .pro-icon-wrapper .pro-item-content {
+    color: white;
+
+   
+  }
+  #header .pro-sidebar-inner .pro-sidebar-layout .active {
+    /* background-image: linear-gradient(0deg, #fece00 0%, #ffe172 100%); */
+    background-color: rgb(178, 229, 250);
+    color: white;
+  }
+
+  #header a {
+      color: white;
+      size: 14px;
+  }
+  #header .logo {
+    padding: 20px;
+  }
+
+  #Profile-Pic {
+    padding-left: 50px;
+    align-items: center;
+    
+   }
+
+   /* Flex needs to be fixed */
+
+   #flex-container{
+       display: flex;
+       flex-direction: row wrap;   
+   }
+
+   #flex-item{
+       flex: 1;
+       float: left;
+   }
+
+  
+  @media only screen and (max-width: 720px) {
+    html {
+      overflow: hidden;
+    }
+  }
