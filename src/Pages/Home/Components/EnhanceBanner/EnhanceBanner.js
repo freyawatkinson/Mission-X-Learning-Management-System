@@ -1,6 +1,6 @@
 import React from 'react'
 import "./EnhanceBanner.css"
-import star from "../img/star.png"
+import star from "../images/star.png"
 
 function EnhanceBanner () {
 

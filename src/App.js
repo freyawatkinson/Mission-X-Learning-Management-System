@@ -1,8 +1,8 @@
 import './App.css';
 import {Route, Link} from 'react-router-dom';
 
-import Home from './Components/Home';
-import Login from './Components/Login';
+import Home from './Pages/Home';
+import Login from './Pages/LoginSignup';
 import ProfileViewer from './Components/ProfileViewer';
 import ProgressTracker from './Components/ProgressTracker';
 import ProjectSubmissions from './Components/ProjectSubmissions';
@@ -13,14 +13,14 @@ import TeacherProjectBuilder from './Components/TeacherProjectBuilder';
 import TeacherProjectLibrary from './Components/TeacherProjectLibrary';
 import HelpRequests from './Components/HelpRequests';
 import TeacherDashboard from './Components/TeacherDashboard';
-
-import NavBar from './Components/NavBar';
+import NavBar from './Pages/NavBar';
 
 function App() {
   return (
     <div className="App">
 
-      <NavBar />
+      <NavBar/>
+    
       <TeacherDashboard/>
       <Route exact path="/" component={Home} />
       <Route exact path="/Login" component={Login} />

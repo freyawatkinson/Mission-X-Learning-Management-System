@@ -1,0 +1,50 @@
+.topNav_container{
+    background-color: rgb(0, 177, 251);
+    margin:0px;
+    padding: 0px;
+    height: 70px;
+    display: flex;
+}
+.Logo {
+    flex:1;
+}
+
+.topNavLinks_container {
+    margin: 0px 0px 0px 550px;
+    padding: 0px;
+    flex: 2;
+    }
+    
+    
+    .rightLinks_container {
+    justify-content: flex-end;
+    display: inline;
+    flex:1;
+
+    }
+
+    .flags_container {
+    align-items: flex-start;
+    flex-direction: column;
+    }
+
+    .login_container {
+    align-items: flex-end
+    }
+
+    .icon{
+        color: white;
+    }
+
+.p{
+    align-self: center;
+    margin: 20px 10px 10px 10px;
+    padding: 0px;
+    color: white;
+}
+
+.logo{
+    display: flex-start;
+    margin:0px;
+    padding:0px;
+}
