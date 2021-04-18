@@ -1,4 +1,5 @@
 import React from 'react';
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 
 import "./TeacherDashboard.css";
 import { Button } from '@material-ui/core';
@@ -15,6 +16,18 @@ function TeacherDashboard() {
 
     </div>
     <div id="dashboard-inner">
+
+    <Switch>      
+         
+          <Route path="./components/ProgressTracker" exact component={ProgressTracker}/>
+          <Route path="'./components/ProjectSubmissions'" exact component={ProjectSubmissions}/>
+          <Route path="./components/TeacherProjectBuilder" exact component={TeacherProjectBuilder}/>
+          <Route path="./components/TeacherProjectLibrary" exact component={TeacherProjectLibrary}/>
+          <Route path="./components/HelpRequests" exact component={HelpRequests}/>
+          <Route path="./components/TeacherDashboard" exact component={TeacherDashboard}/>
+          <Route path="./components/NavBar" exact component={NavBar}/>
+
+        </Switch>
       
     <h1>Teacher Dashboard</h1>
     </div>

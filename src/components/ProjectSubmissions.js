@@ -6,6 +6,15 @@ import NavBar from './NavBar';
 import "./ProjectSubmissions.css";
 
 function ProjectSubmissions() {
+
+    let students = [];
+    fetch(`https://localhost:4000`)
+    .then((res) => res.json())
+    .then((data) => {
+    console.log(data.results);
+    });
+
+
     return (
         <div id= "dashboard">
         

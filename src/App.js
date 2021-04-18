@@ -66,7 +66,7 @@ const App = () => {
         <h1>React Dashboard</h1>
         {/* <Sidebar sidebarOpen={sidebarOpen} openSidebar={openSidebar} /> */}
         <NavBar/>
-        <ProgressTracker/>
+        
         {/* Switch statement loads/Routes to specified path and populates from specific function */}
         <Switch>
           <Route path="/" exact component={Home} />

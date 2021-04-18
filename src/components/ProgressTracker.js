@@ -26,48 +26,20 @@ class ProgressTracker extends React.Component {
       const userProgress = await this.getUserProgress();
       this.setState({userProgress});
   }
-// Example function from Sebin:
 
-//   function ProjectProgress() {
-//     const studentsProjectData = [{}];
-//     return (
-//       <div>
-//         {studentsProjectData.map((student) => (
-//           <>
-//             <StudentProgress
-//               name={`${student.name.first} ${student.name.last}`}
-//               completionStatus={student.projectsCompleted}
-//               key={student.id.value}
-//             />
-//           </>
-//         ))}
-//       </div>
-//     );
-//   }
-
-// Mapping through the array of data
-  render() {
-      var users =[];
-      if (this.state.userProgress) {
-          user = this.state.userProgress.map(user => {   
-             
+render() {
     return (
-        
-      <div>  
-
+      <div>
         {this.state.progressHistory.map((user) => {
-          <StudentProgress
-            name={`${user.name.first} ${user.name.last}`}
-            submission={user.submission}
-            email={user.email}
-            key={user.id.value}
-          />}
-    
-
-        </div>
-
-        )
-      }}}};
-      {/* Some random syntax error with the brackets here that needs to be fixed */}
-
-export default ProgressTracker;
+          return (
+            <StudentProgress
+              name={`${user.name.first} ${user.name.last}`}
+              submission={user.submission}
+              email={user.email}
+              key={user.id.value}
+            />
+          );
+        })}
+      </div>
+    );
+      }
