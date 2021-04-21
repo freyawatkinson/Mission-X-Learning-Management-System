@@ -12,6 +12,8 @@ class ProgressTracker extends React.Component {
       userProgress:  [],
     };
 
+    const user = [];
+
     this.getUserProgress = this.getUserProgress.bind(this);
     
   };
@@ -42,4 +44,7 @@ render() {
         })}
       </div>
     );
-      }
+  }
+};
+
+  export default ProgressTracker;
