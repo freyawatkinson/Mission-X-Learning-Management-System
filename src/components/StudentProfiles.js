@@ -1,4 +1,6 @@
 import React from 'react';
+import StudentProgress from './StudentProgress.js';
+import Student from './student.js';
 
 class StudentProfiles extends React.Component {
     constructor(props) {

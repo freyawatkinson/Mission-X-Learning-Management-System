@@ -1,38 +1,36 @@
-import React, {Component} from 'react';
-import './ProgressTracker.css';
+import React from 'react';
 import StudentProgress from './StudentProgress';
-
-
+import './ProgressTracker.css';
 
 class ProgressTracker extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      userProgress:  [],
-    };
+    this.state = {user:  [
+      
+       
+    ]};
 
-    const user = [];
+    this.user = this.user.bind(this);
 
-    this.getUserProgress = this.getUserProgress.bind(this);
-    
   };
+
 // Fetching data from the database using API
-  async getUserProgress() {
+  async getUser() {
       const res = await fetch('https://localhost:4000');
       const data = await res.json();
       return data.results;
   }
 
   async componentDidMount() {
-      const userProgress = await this.getUserProgress();
-      this.setState({userProgress});
+      const user = await this.getUser();
+      this.setState({user});
   }
 
 render() {
     return (
       <div>
-        {this.state.progressHistory.map((user) => {
+        {this.state.user.map((user) => {
           return (
             <StudentProgress
               name={`${user.name.first} ${user.name.last}`}
@@ -47,4 +45,7 @@ render() {
   }
 };
 
-  export default ProgressTracker;
+
+
+
+export default ProgressTracker;

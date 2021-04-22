@@ -1,0 +1,22 @@
+.div-container{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+}
+
+.avatar{
+    border-radius: 80%;
+    height: 50px;
+    width: 50px;
+}
+
+.tile{
+    background-color: white;
+    border-style: solid 1px black;
+}
+
+.details{
+    font-family: 'Open Sans';
+    font-size: 14;
+}

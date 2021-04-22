@@ -1,5 +1,5 @@
 import React from 'react';
-import Stepper from '@material-ui/core/Stepper';
+import ProgressTracker from './ProgressTracker.js';
 
 
 export default function StudentProgress(props) {
