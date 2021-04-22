@@ -2,11 +2,16 @@
 
   display: flex;
   justify-content: space-between;
+  background-color: #B2E4FA;
   
 }
 
+.progress-container {
+  background-color: pink;
+  
+}
 
-.student-details {
+/* .student-details {
  
     display: flex;
     flex-direction: column;
@@ -17,5 +22,5 @@
     height: 50%;
     border: black solid 1px;
 
-}
+} */
 

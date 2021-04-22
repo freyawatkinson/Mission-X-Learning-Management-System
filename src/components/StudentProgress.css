@@ -1,34 +1,95 @@
-/* .step-container{
+.step-container{
     display: flex;
     justify-content: space-between;
+    margin-top: 30vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
 
 }
 
 .step-wrapper{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     align-items: center;
     justify-content: center;
     width: 23%;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: yellow;
+    
 }
 
 .complete-step{
     border-radius: 80%;
     border: 1px solid grey;
-    width: 20px;
-    height: 20px;
-    padding: 3px;
+    width: 30px;
+    height: 30px;
+    padding: 6px;
     text-align: center;
     margin-bottom: 1.2rem;
+    font-weight: 600;
+    font-size: 19px;
+    align-items: center;
+    background-color: #99EDCC;
 }
 
 .step{
     border-radius: 80%;
     border: 1px solid grey;
-    width: 20px;
-    height: 20px;
-    padding: 3px;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
     text-align: center;
-    margin-bottom: 1.2rem;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 19px;
+    align-items: center;
+    background-color: white;
+    
+    
+    
+}
+
+
+
+.student-progress-steps {
     background-color: green;
-} */
+    margin-bottom: -200px;
+    margin-top: -100px;
+    
+}
+
+/* Text details for page */
+
+.student-details{
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    
+    margin-left: 300px;
+    margin-top: 10px;
+    margin-right: 200px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+   
+}
+
+.student-name {
+    background-color: red;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+  
+    
+}
+
+.student-completion {
+    background-color: aquamarine;
+    font-family: 'Open Sans', sans-serif;
+}
