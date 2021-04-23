@@ -1,0 +1,33 @@
+.Footer{
+    position:fixed;bottom:0;
+    height: 300px;
+    width:100%;
+    display: flex;
+    color:#707070;
+    font-size: 13px;
+    background-color: #B2E4FA;
+}
+
+p.Appfooter{
+    width: 20px;
+    position:fixed;right:0;
+    text-align: left;
+    width: 20px;
+}
+
+h4 {
+    text-align: Left;
+    margin-left: 50px;
+    padding-top: 50px;
+
+}
+
+li. {
+    flex-direction: column;
+}
+.Unstyled-list{
+}
+
+.FooterInfo{
+
+}
