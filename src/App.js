@@ -6,6 +6,7 @@ import './App.css';
 
 import ProgressTracker from './components/ProgressTracker';
 import NavBar from './components/NavBar';
+import TeacherDashboard from './components/TeacherDashboard';
 
 
 // Dashboard test
@@ -16,6 +17,7 @@ import Dashnavbar from './components/NNavbar/Dashnavbar';
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 
 import ProjectProgress from './components/ProgressTracker';
+import Sidebar from './components/sidebar/Sidebar';
 
 
 // App function
@@ -34,13 +36,17 @@ const App = () => {
 
   return (
     <Router>
-    <div className="container">
-      {/* <Dashnavbar sidebarOpen={sidebarOpen} openSidebar={openSidebar}/> */}
+    <div className="app">
+      <Dashnavbar sidebarOpen={sidebarOpen} openSidebar={openSidebar}/>
       
         
-        {/* <Sidebar sidebarOpen={sidebarOpen} openSidebar={openSidebar} /> */}
+        {/* <Sidebar sidebarOpen={sidebarOpen} openSidebar={openSidebar} />  */}
+        {/* <Sidebar/> */}
+
+
         {/* <NavBar/> */}
-        {/* <TeacherDashboard/> */}
+
+        <TeacherDashboard/>
         <ProjectProgress/>
         
         {/* Switch statement loads/Routes to specified path and populates from specific function */}

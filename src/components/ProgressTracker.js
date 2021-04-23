@@ -8,51 +8,16 @@ class ProgressTracker extends React.Component {
   };
 // Fetching data from the database using API
   async getUser() {
-      // const res = await fetch('https://localhost:4000');
-      // const data = await res.json();
-      // return data.results;
-      return [
-        {
-        name: {
-          first : 'Sebin',
-          last: 'Benjamin'
-        },
-        completionStatus : 9,
-        
-      },
+      const baseURL = `http://localhost:4000`;
+      const endpoint = `api/project`;
+      const projectID = `3`;
 
-      {
-        name: {
-          first : 'Sebin',
-          last: 'Benjamin'
-        },
-        completionStatus : 9,
-        
-      },
+      const apiURL = `${baseURL}/${endpoint}/${projectID}`; // http://localhost:4000/api/project/3
+      const res = await fetch(apiURL);
+      const data = await res.json();
 
-      {
-        name: {
-          first : 'Sebin',
-          last: 'Benjamin'
-        },
-        completionStatus : 9,
-        
-      },
-
-      {
-        name: {
-          first : 'Sebin',
-          last: 'Benjamin'
-        },
-        completionStatus : 9,
-        
-      },
-
-     
-      
-    
-    
-    ];
+      console.log(data);
+      return data;
   }
   async componentDidMount() {
       const user = await this.getUser();
@@ -66,8 +31,8 @@ render() {
           return (
             <StudentProgress
             
-              name={`${user.name.first} ${user.name.last}`}
-              completionStatus={user.completionStatus}
+              name={user.projectId}
+              completionStatus={user.userId}
               
             />
           );
