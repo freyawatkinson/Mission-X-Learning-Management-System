@@ -47,7 +47,7 @@ const App = () => {
         {/* <NavBar/> */}
 
         <TeacherDashboard/>
-        <ProjectProgress/>
+        {/* <ProjectProgress/> */}
         
         {/* Switch statement loads/Routes to specified path and populates from specific function */}
         <Switch>

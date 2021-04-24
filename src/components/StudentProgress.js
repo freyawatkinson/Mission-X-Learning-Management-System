@@ -11,7 +11,7 @@ export default function StudentProgress(props) {
         <div className="student-name">
            {name}
            </div>
-           <br></br>
+           {/* <br></br> */}
            <div className="student-completion">
            {`${completionStatus} out of 15 projects completed`}
            </div>
