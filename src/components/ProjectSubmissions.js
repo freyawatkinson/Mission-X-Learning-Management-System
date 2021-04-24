@@ -52,7 +52,11 @@ async componentDidMount() {
         </div>
 
         <div className="project-div">
-        <SubmittedProject/>
+        <SubmittedProject
+        
+        // name={user.student_name}
+        // dateSubmitted={user.date_submitted}
+              />
         </div>     
 
         </div>

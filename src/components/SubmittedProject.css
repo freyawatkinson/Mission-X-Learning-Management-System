@@ -1,5 +1,40 @@
 .container{
     background-color: bisque;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 60vh;
 }
 
-.student {background-color: aqua;}
+.student {
+    background-color: aqua;
+    padding: 20px;
+    align-content: space-between;
+    display: flex;
+    
+    
+    }
+.avatar {
+    background-color: tomato;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.details{
+    background-color: white;
+    padding: 10px;
+    margin-left: 10px;
+    flex: 1;
+    padding-left: 20%;
+    padding-top: 5%;
+    font-family: 'Open sans', sans-serif;
+    font-size: 18;
+}
+.date{
+    background-color: yellowgreen;
+    padding: 10px;
+    margin-left: 10px;
+    
+    
+}
