@@ -4,21 +4,37 @@ import {BiCheck} from 'react-icons/bi';
 import {IoMdDownload} from 'react-icons/io';
 import NavBar from './NavBar';
 import "./ProjectSubmissions.css";
-
-function ProjectSubmissions() {
-
-    let students = [];
-    fetch(`https://localhost:4000`)
-    .then((res) => res.json())
-    .then((data) => {
-    console.log(data.results);
-    });
+import SubmittedProject from './SubmittedProject';
+// Import project component here
 
 
-    return (
+class ProjectSubmissions extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state={ user: [] };
+    }
+
+    // Fetching data from the database using API
+    async getUser() {
+    const baseURL = `http://localhost:4000`;
+    const endpoint = `api/project`;
+    const projectID = `3`;
+
+    const apiURL = `${baseURL}/${endpoint}/${projectID}`; // http://localhost:4000/api/project/3
+    const res = await fetch(apiURL);
+    const data = await res.json();
+
+    console.log(data);
+    return data;
+}
+async componentDidMount() {
+    const user = await this.getUser();
+    this.setState({user});
+}
+
+    render () {
+        return(
         <div id= "dashboard">
-        
-        
 
         <div id="button-container">
         <Button color="primary" id="button3"> More Projects</Button>
@@ -36,12 +52,13 @@ function ProjectSubmissions() {
         </div>
 
         <div className="project-div">
-            <h3>Div test</h3>
+        <SubmittedProject/>
         </div>     
 
         </div>
       </div>
-    )
+
+        )}
 }
 
 export default ProjectSubmissions;

@@ -102,6 +102,10 @@ h2 {
     letter-spacing: 1px;
 }
 
+.project-div {
+    background-color: yellow;
+}
+
 
   
 @media only screen and (max-width: 720px) {

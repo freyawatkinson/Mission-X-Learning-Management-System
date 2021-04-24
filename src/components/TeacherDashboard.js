@@ -20,6 +20,10 @@ function TeacherDashboard() {
     <Button color="primary" id="button1">Take Screenshot</Button>
 
     <ProgressTracker/>
+    <ProgressTracker/>
+    <ProgressTracker/>
+    <ProgressTracker/>
+
     </div>
 
     <Switch>      

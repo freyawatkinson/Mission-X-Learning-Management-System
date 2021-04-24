@@ -23,6 +23,14 @@ class ProgressTracker extends React.Component {
       const user = await this.getUser();
       this.setState({user});
   }
+//  ADD SOME KIND OF FUNCTION TO CHECK IF PROEJCT HAS BEEN COMPLETED ACCORDING TO PROJECTID
+  // checkComplete() {
+  //   if ({user.submitted} == true) {
+  //     console.log('This project has been submitted');
+  //   }
+  // }
+
+
 render() {
     return (
       <div className='progress-container'>
@@ -31,10 +39,11 @@ render() {
           return (
             <StudentProgress
             
-              name={user.projectId}
+              name={user.student_name}
               completionStatus={user.userId}
-              
+            
             />
+            
           );
         })}
       </div>

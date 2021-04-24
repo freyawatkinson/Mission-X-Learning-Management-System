@@ -18,6 +18,7 @@ import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 
 import ProjectProgress from './components/ProgressTracker';
 import Sidebar from './components/sidebar/Sidebar';
+import ProjectSubmissions from './components/ProjectSubmissions';
 
 
 // App function
@@ -46,7 +47,7 @@ const App = () => {
 
         {/* <NavBar/> */}
 
-        <TeacherDashboard/>
+        <ProjectSubmissions/>
         {/* <ProjectProgress/> */}
         
         {/* Switch statement loads/Routes to specified path and populates from specific function */}
