@@ -1,13 +1,13 @@
 import React from 'react';
-import {Logo, MaoriFlag, NZFlag} from '../Assets/Shared';
-import '../Shared/NavBar/NavBar1.css'; 
-import AccountCircleSharpIcon from '@material-ui/icons/AccountCircleSharp';
+/*import {Logo, MaoriFlag, NZFlag} from '../Assets/Shared';
+import AccountCircleSharpIcon from '@material-ui/icons/AccountCircleSharp';*/
+import './NavBar1.css'; 
 
 function NavBar1 () {
     return (
         <div class="topNav_container">
          <div className="Logo">
-                <img src={Logo} alt="Logo"/>
+                {/* <img src={Logo} alt="Logo"/> */}
             <div className="NavLinks_container"/>
             <p href="a">HOME</p>
             <p href="a">FEATURES</p>
@@ -17,12 +17,12 @@ function NavBar1 () {
             <div class="rightLinks_container">
                  <div className="flags_container">
                     <h1>LANG</h1>
-                   <img src={MaoriFlag} alt="maori flag" />
-                   <img src={NZFlag} alt="NZ flag" />
+                   {/* <img src={MaoriFlag} alt="maori flag" />
+                   <img src={NZFlag} alt="NZ flag" /> */}
                </div>
                <div className="login_container">
                    <div className="icon">  
-                   <img src={AccountCircleSharpIcon} alt="icon"/>
+                   {/* <img src={AccountCircleSharpIcon} alt="icon"/> */}
                    </div>
                     </div>
                    <p href="LoginSignup">REGISTER | LOGIN </p>

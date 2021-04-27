@@ -1,6 +1,6 @@
 import React from 'react';
-import "./Digitechbanner.css"
-import studentdesk from "../images/student.png"
+import "../Pages/Home/Components/DigitechBanner/Digitechbanner.css"
+/*import studentdesk from "../Assetsimages/student.png"*/
 
 function Digitechbanner  () {
 
