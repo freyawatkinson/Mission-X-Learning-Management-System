@@ -1,0 +1,35 @@
+.Appfooter {
+  height: 300px;
+  width: 100%;
+  background-color: hsl(198, 88%, 84%);
+  color: #707070;
+  padding-top: 4rem;
+  justify-content: center;
+  display: flex;
+}
+
+.Footercontent {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 10%;
+  justify-content: space-around;
+}
+
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+}
+
+.footer-heading h4 {
+  margin-bottom: 4rem;
+}
+
+.footer-heading p {
+  width: 20px;
+  position: fixed;
+  right: 0;
+  text-align: left;
+  width: 20px;
+}
