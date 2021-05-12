@@ -1,44 +1,38 @@
-import React, {Component} from 'react';
-import './ProgressTracker.css';
-import StudentProgress from './StudentProgress';
-
-
-
-
-
-
+// import React, {Component} from 'react';
+// import './ProgressTracker.css';
+// import StudentProgress from './StudentProgress';
 
 //   Stepper {
 //     /* position: relative; */
-//     display: table; 
+//     display: table;
 //     width: 100%;
-//     table-layout: fixed; 
-    
+//     table-layout: fixed;
+
 //     border-style: solid 1px black;
 //   }
-  
+
 //   .Stepper__step {
-//     position: relative; 
+//     position: relative;
 //     display: table-cell;
 //     text-align: center;
 //     padding: 0.5rem;
-    
+
 //   }
-  
+
 //   .Stepper__indicator {
-//     position: relative; 
+//     position: relative;
 //     display: block;
 //     z-index: 2;
 //   }
-  
+
 //   .Stepper__label {
-//     position: relative; 
+//     position: relative;
 //     display: block;
 //     margin: 0.5rem 0;
 //     color: #cfd7de;
 //     z-index: 2;
 //   }
-  
+
 //   .Stepper__info {
 //     position: relative;
 //     display: inline-block;
@@ -53,14 +47,14 @@ import StudentProgress from './StudentProgress';
 //     color: #fff;
 //     z-index: 2;
 //   }
-  
+
 //   .Stepper__panel {
 //     display: none;
 //   }
-  
+
 //   .Stepper .Stepper__step:after {
 //     content: " ";
-//     position: absolute; 
+//     position: absolute;
 //     left: 50%;
 //     top: 1.75rem;
 //     width: 100%;
@@ -71,46 +65,44 @@ import StudentProgress from './StudentProgress';
 //   .Stepper .Stepper__step:last-child:after {
 //     display: none;
 //   }
-  
+
 //   .Stepper--inline .Stepper__indicator,
 //   .Stepper--inline .Stepper__label {
 //     display: inline-block;
 //     vertical-align: inherit;
 //   }
-//    .Stepper--inline .Stepper__label { 
+//    .Stepper--inline .Stepper__label {
 //     text-align: left;
 //     padding: 0 0.5rem;
 //     background: #fff;
 //   }
-  
-//   .Stepper--inline.Stepper--bottom .Stepper__label { 
+
+//   .Stepper--inline.Stepper--bottom .Stepper__label {
 //     vertical-align: middle;
 //   }
-//   .Stepper--inline.Stepper--bottom .Stepper__step:after { 
+//   .Stepper--inline.Stepper--bottom .Stepper__step:after {
 //     top: auto;
 //     bottom: 1.75rem;
 //   }
-  
-  
+
 //   .Stepper--vertical .Stepper__step {
 //     display: block;
 //     text-align: left;
 //   }
-  
+
 //   .Stepper--vertical .Stepper__label {
 //     padding-left: 1rem;
 //   }
-  
+
 //   .Stepper--vertical .Stepper__indicator,
 //   .Stepper--vertical .Stepper__label {
 //     display: table-cell;
 //   }
-  
+
 //   .Stepper--vertical .Stepper__panel {
 //     margin-left: 3.5rem;
 //   }
-  
-  
+
 //   .Stepper--vertical .Stepper__step:after {
 //     content: " ";
 //     position: absolute;
@@ -121,7 +113,7 @@ import StudentProgress from './StudentProgress';
 //     height: auto;
 //     border-left: 0.125rem solid #e3e8ec;
 //   }
-  
+
 //   .Stepper .Stepper__step.is-complete .Stepper__info {
 //     border-color: #a6b6c3;
 //     background-color: #a6b6c3;
@@ -129,7 +121,7 @@ import StudentProgress from './StudentProgress';
 //   .Stepper .Stepper__step.is-complete .Stepper__label {
 //     color: #a6b6c3;
 //   }
-  
+
 //   .Stepper .Stepper__step.is-active .Stepper__info {
 //     border-color: #627c90;
 //     background-color: #627c90;
@@ -137,7 +129,7 @@ import StudentProgress from './StudentProgress';
 //   .Stepper .Stepper__step.is-active .Stepper__label {
 //     color: #627c90;
 //   }
-  
+
 //   .Stepper .Stepper__step.is-warning .Stepper__info {
 //     border-color: #f1c40f;
 //     background-color: #f1c40f;
@@ -145,7 +137,7 @@ import StudentProgress from './StudentProgress';
 //   .Stepper .Stepper__step.is-warning .Stepper__label {
 //     color: #f1c40f;
 //   }
-  
+
 //   .Stepper .Stepper__step.is-error .Stepper__info {
 //     border-color: #e95a4b;
 //     background-color: #e95a4b;
@@ -153,8 +145,7 @@ import StudentProgress from './StudentProgress';
 //   .Stepper .Stepper__step.is-error .Stepper__label {
 //     color: #e95a4b;
 //   }
-  
-  
+
 //   /* Demo styles */
 //   * {
 //       box-sizing: border-box;
@@ -167,20 +158,19 @@ import StudentProgress from './StudentProgress';
 //   .Container {
 //     position: relative;
 //   /*   max-width: 800px; */
-  
+
 //     margin: 0 auto;
 //     background: #fafafa;
 //   }
 //   .Container + .Container {
 //     margin-top: 0.5rem;
 //   }
-  
+
 //   svg {
 //     vertical-align: middle;
 //   }
-  
-  
-  /* .stepper-container-horizontal {
+
+/* .stepper-container-horizontal {
       border: 1px;
       box-shadow: 0 0 10px pink;
       border-radius: 3px;
@@ -222,4 +212,3 @@ import StudentProgress from './StudentProgress';
       position: absolute;
       width: 70%;
       top: 20%; */
-  

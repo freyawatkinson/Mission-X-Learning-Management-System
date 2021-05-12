@@ -1,5 +1,5 @@
 import React from "react";
-import TopNavBar from "./TopNavBar.js";
+import TopNavBar from "../TopNavBar/TopNavBar";
 import "./HomePageStyle.css";
 // import SignUp Modal
 import studentProject from "./Images/ContainerTwoProject.png";
