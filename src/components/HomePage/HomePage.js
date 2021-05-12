@@ -19,12 +19,8 @@ import Atom from "./StudentsIcons/technologyIcon.png";
 import girlonlaptop from "./Images/ContainerThreeImageFour.jpg";
 import studentslistening from "./Images/ContainerFiveImage.jpg";
 // import FormModal
-import Footer from "./AppFooter.js";
+import Footer from "../AppFooter/AppFooter";
 import HomePageIcons from "./StudentsIcons/StudentCreateIcon.js";
-
-const future = () => {
-	<h1 className="future">future</h1>;
-};
 
 const HomePage = () => {
 	return (
