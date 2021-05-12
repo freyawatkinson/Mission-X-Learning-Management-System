@@ -1,14 +1,11 @@
 .container {
-
-  display: flex;
-  justify-content: space-between;
-  background-color: #B2E4FA;
-  
+	display: flex;
+	justify-content: space-between;
+	background-color: #b2e4fa;
 }
 
 .progress-container {
-  background-color: pink;
-  
+	background-color: pink;
 }
 
 /* .student-details {
@@ -23,4 +20,3 @@
     border: black solid 1px;
 
 } */
-
