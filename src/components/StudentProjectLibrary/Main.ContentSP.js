@@ -7,90 +7,85 @@ import StudentProjectCard from "./ProjectCard/Main.Content.Projects";
 import { Link } from "react-router-dom";
 
 const buttonStyles = makeStyles((theme) => ({
-	tabs1: {
-		border: "1px solid grey",
-		color: "white",
-		height: 20,
-		textDecoration: "none",
-	},
+  tabs1: {
+    border: "1px solid grey",
+    color: "white",
+    height: 20,
+    textDecoration: "none",
+  },
 
-	tabs2: {
-		border: "1px solid grey",
-		color: "white",
-		height: 20,
-		textDecoration: "none",
-	},
+  tabs2: {
+    border: "1px solid grey",
+    color: "white",
+    height: 20,
+    textDecoration: "none",
+  },
 }));
 
 function SPmaincontent(props) {
-	const [projectData, setProjectData] = useState([]);
+  const [projectData, setProjectData] = useState([]);
 
-	const callAPI = () => {
-		const requestURL1 = "http://localhost:4000/api/project/getProjects";
+  const callAPI = () => {
+    const requestURL1 = "http://localhost:4000/api/project/getProjects";
 
-		fetch(requestURL1)
-			.then((response) => response.json())
-			.then((data) => {
-				setProjectData(data);
-				console.log(data);
-			});
-	};
+    fetch(requestURL1)
+      .then((response) => response.json())
+      .then((data) => {
+        setProjectData(data);
+        console.log(data);
+      });
+  };
 
-	useEffect(() => {
-		callAPI();
-	}, []);
+  useEffect(() => {
+    callAPI();
+  }, []);
 
-	const classes = buttonStyles();
+  const classes = buttonStyles();
 
-	return (
-		<div className="contentContainer">
-			<div className="contentHeader"></div>
+  return (
+    <div className="contentContainer">
+      <div className="contentHeader"></div>
 
-			<div className="contentTabs">
-				<div className="projectLevel">
-					<ButtonGroup
-						size="small"
-						variant="text"
-						className={buttonStyles.tabs1}
-					>
-						<Button>BEGINNER</Button>
-						<Button>INTERMEDIATE</Button>
-						<Button>ADVANCED</Button>
-					</ButtonGroup>
-				</div>
+      <div className="contentTabs">
+        <div className="projectLevel">
+          <ButtonGroup
+            size="small"
+            variant="text"
+            className={buttonStyles.tabs1}
+          >
+            <Button>BEGINNER</Button>
+            <Button>INTERMEDIATE</Button>
+            <Button>ADVANCED</Button>
+          </ButtonGroup>
+        </div>
 
-				<div className="displayTab">
-					<ButtonGroup
-						size="small"
-						variant="text"
-						className={buttonStyles.tabs2}
-					>
-						<Button>25</Button>
-						<Button>50</Button>
-						<Button>100</Button>
-					</ButtonGroup>
-				</div>
-			</div>
+        <div className="displayTab">
+          <ButtonGroup
+            size="small"
+            variant="text"
+            className={buttonStyles.tabs2}
+          >
+            <Button>25</Button>
+            <Button>50</Button>
+            <Button>100</Button>
+          </ButtonGroup>
+        </div>
+      </div>
 
-			<div className="studentActivities">
-				{projectData.map((project) => {
-					return (
-						<Link className={classes.textDecoration} to={props.path}>
-							<StudentProjectCard
-								Image={project.IMGURL}
-								Title={project.Course}
-								Difficulty={
-									projectData
-										? `${project.Level} | ${project.Activity_Type}`
-										: "Loading"
-								}
-							/>
-						</Link>
-					);
-				})}
-			</div>
-		</div>
-	);
+      <div className="studentActivities">
+        {projectData.map((project) => {
+          return (
+            <Link className={classes.textDecoration} to={props.path}>
+              <StudentProjectCard
+                Image={project.IMGURL}
+                Title={project.Course}
+              />
+            </Link>
+          );
+        })}
+      </div>
+    </div>
+  );
 }
 
 export default SPmaincontent;

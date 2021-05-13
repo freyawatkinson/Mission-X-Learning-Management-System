@@ -4,13 +4,14 @@
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
 }
 
 .Footercontent {
 	width: 80%;
 	display: flex;
 	flex-direction: row;
-	margin-left: 10%;
 	justify-content: space-around;
 	list-style: none;
 }
@@ -22,13 +23,13 @@
 }
 
 .footer-heading h4 {
-	margin-bottom: 4rem;
+	margin-bottom: 1rem;
 }
 
 .footer-heading p {
-	/* width: 20px; */
+	width: 390px; 
 	/* position: fixed; */
 	right: 0;
 	text-align: left;
-	/* width: 20px; */
+	word-wrap: normal;
 }

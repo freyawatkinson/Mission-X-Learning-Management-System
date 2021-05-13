@@ -35,7 +35,7 @@ const useStyles = makeStyles({
 	},
 });
 
-//Function to call props from Difficulty Level StudentProjectAPI.js and Create Card to be called to Main
+//Function to call props from StudentProjectAPI.js and Create Card to be called to Main
 const StudentProjectCard = ({ Image, Title, Level }, link) => {
 	const projectcard = useStyles();
 	return (
