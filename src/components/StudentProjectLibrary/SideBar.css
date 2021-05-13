@@ -1,20 +1,20 @@
 .StudentLibrarySideBar {
-  grid-area: sidebar;
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 5vh;
-  left: 0;
-  text-align: left;
-  font-family: "Open Sans";
-  width: 20%;
+	grid-area: sidebar;
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 5vh;
+	left: 0;
+	text-align: left;
+	font-family: "Open Sans";
+	width: 20%;
 }
 
 .Checkbox-heads {
-  margin: 10px;
-  border-bottom: 1px solid #767676;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 900;
+	margin: 10px;
+	border-bottom: 1px solid #767676;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 900;
 }

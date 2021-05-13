@@ -1,0 +1,58 @@
+.mainProjectContainer {
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.projectSideBar {
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+	margin: 4%;
+	/* margin-top: 50px; */
+}
+
+.projectContent {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	justify-content: space-evenly;
+	margin: 5%;
+}
+
+.ProjectBottomButtonsContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin: 5%;
+}
+
+.ProjectItems {
+	display: flex;
+	flex: row;
+	justify-content: space-between;
+	/* margin: 5%; */
+}
+
+.ProjectGridImg {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.ProjectGridImg img {
+	border-radius: 10%;
+	border: solid 1px #c7c5c5;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	object-fit: contain;
+}
+
+.contentTabs {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}

@@ -1,15 +1,12 @@
 .App {
-  background-color: rgb(178, 229, 250);
-  margin: 0px;
-  padding: 0px;
-  font-family: "Source Sans Pro", serif;
-  
+	/* background-color: rgb(178, 229, 250); */
+	/* margin: 0px;
+	padding: 0px; */
+	font-family: "Source Sans Pro", serif;
 }
-
 
 @media only screen and (max-width: 720px) {
-  html {
-    overflow: hidden;
-  }
+	html {
+		overflow: hidden;
+	}
 }
-

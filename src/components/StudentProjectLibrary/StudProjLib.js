@@ -10,15 +10,22 @@ function Projectlib() {
 		<div>
 			<TopNavBar />
 
-			<body>
-				<ProjectSideBar />
-				<SPmaincontent />
-			</body>
-
-			<footer>
-				<Footer />
-			</footer>
+			<div className="mainProjectContainer">
+				<div className="projectSideBar">
+					<ProjectSideBar />
+				</div>
+				<div className="projectContent">
+					<h1>Projects</h1>
+					<h4>
+						Welcome to the project library. You can use the filters on the right
+						to help you search for specific projects.
+					</h4>
+					<SPmaincontent />
+				</div>
+			</div>
+			<Footer />
 		</div>
 	);
 }
+
 export default Projectlib;

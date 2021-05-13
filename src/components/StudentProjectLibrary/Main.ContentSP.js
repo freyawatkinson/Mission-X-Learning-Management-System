@@ -1,18 +1,10 @@
-import React from "react";
-// import { render } from "@testing-library/react";
-import "./Main.ContentSP.css";
+import React, { useEffect, useState } from "react";
 import "./ProjectCard/Main.Content.Projects.js";
+import "./StudentProjLib.css";
 import { Button, ButtonGroup } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core";
-import PropTypes from "prop-types";
-import StudentActivities from "./ProjectCard/Main.Content.Projects.js";
-// import { Link } from "react-router-dom";
-/*import Tabs from './Tabs.js';*/
-
-//Second section of Student Project Library Page.
-//To be called to the main Student Library Page.
-//Body of the Student Library.
-// Content *Header, *Buttons to Call Project Level, *Buttons to filter, ProjectCard Loop Function and API to call
+import StudentProjectCard from "./ProjectCard/Main.Content.Projects";
+import { Link } from "react-router-dom";
 
 const buttonStyles = makeStyles((theme) => ({
 	tabs1: {
@@ -30,23 +22,29 @@ const buttonStyles = makeStyles((theme) => ({
 	},
 }));
 
-function BackToTop() {
-	window.scrollTo({
-		top: 0,
-		behavior: "smooth",
-	});
-}
+function SPmaincontent(props) {
+	const [projectData, setProjectData] = useState([]);
 
-function SPmaincontent() {
+	const callAPI = () => {
+		const requestURL1 = "http://localhost:8080/api/project/getAllData";
+
+		fetch(requestURL1)
+			.then((response) => response.json())
+			.then((data) => {
+				setProjectData(data);
+				console.log(data);
+			});
+	};
+
+	useEffect(() => {
+		callAPI();
+	}, []);
+
+	const classes = buttonStyles();
+
 	return (
 		<div className="contentContainer">
-			<div className="contentHeader">
-				<h1>PROJECTS</h1>
-				<p>
-					Welcome to the project library. You can use the filters on the right
-					to help you search for specific projects.
-				</p>
-			</div>
+			<div className="contentHeader"></div>
 
 			<div className="contentTabs">
 				<div className="projectLevel">
@@ -55,10 +53,9 @@ function SPmaincontent() {
 						variant="text"
 						className={buttonStyles.tabs1}
 					>
-						<Button onClick>BEGINNER</Button>
-						<Button onClick>INTERMEDIATE</Button>
-						<Button onClick>ADVANCED</Button>
-						<Button onClick>ALL</Button>
+						<Button>BEGINNER</Button>
+						<Button>INTERMEDIATE</Button>
+						<Button>ADVANCED</Button>
 					</ButtonGroup>
 				</div>
 
@@ -72,27 +69,25 @@ function SPmaincontent() {
 						<Button>50</Button>
 						<Button>100</Button>
 					</ButtonGroup>
-					0
 				</div>
 			</div>
 
 			<div className="studentActivities">{/*<StudentActivitiesBackend/>*/}</div>
-			{/* Create API to call data*/}
-			{/* Create const for pulling Data for Content buttons 
-          Create and Call function requesting data
-          Fetch! */}
-			{/* Call  */}
-
-			<div className="backToTopbutton">
-				<button
-					type="button"
-					onClick={BackToTop}
-					variant="contained"
-					size="small"
-				>
-					BACK TO TOP
-				</button>
-			</div>
+			{projectData.map((project) => {
+				return (
+					<Link className={classes.textDecoration} to={props.path}>
+						<StudentProjectCard
+							Image={project.IMGURL}
+							Title={project.Title}
+							Difficulty={
+								projectData
+									? `${project.Course} | ${project.ActivityType}`
+									: "Loading"
+							}
+						/>
+					</Link>
+				);
+			})}
 		</div>
 	);
 }
