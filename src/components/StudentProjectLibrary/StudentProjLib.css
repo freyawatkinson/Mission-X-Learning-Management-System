@@ -56,3 +56,18 @@
 	flex-direction: row;
 	justify-content: space-between;
 }
+
+.studentActivities {
+	display: flex;
+	flex-wrap: wrap;
+	/* margin: 50px 10px;
+	padding: 10px; */
+	justify-content: space-evenly;
+	text-align: center;
+	grid-area: gallery;
+}
+
+.studentActivities img {
+	height: 180px;
+	width: 260px;
+}

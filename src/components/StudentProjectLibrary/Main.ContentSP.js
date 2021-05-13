@@ -26,7 +26,7 @@ function SPmaincontent(props) {
 	const [projectData, setProjectData] = useState([]);
 
 	const callAPI = () => {
-		const requestURL1 = "http://localhost:8080/api/project/getAllData";
+		const requestURL1 = "http://localhost:4000/api/project/getProjects";
 
 		fetch(requestURL1)
 			.then((response) => response.json())
@@ -72,22 +72,23 @@ function SPmaincontent(props) {
 				</div>
 			</div>
 
-			<div className="studentActivities">{/*<StudentActivitiesBackend/>*/}</div>
-			{projectData.map((project) => {
-				return (
-					<Link className={classes.textDecoration} to={props.path}>
-						<StudentProjectCard
-							Image={project.IMGURL}
-							Title={project.Title}
-							Difficulty={
-								projectData
-									? `${project.Course} | ${project.ActivityType}`
-									: "Loading"
-							}
-						/>
-					</Link>
-				);
-			})}
+			<div className="studentActivities">
+				{projectData.map((project) => {
+					return (
+						<Link className={classes.textDecoration} to={props.path}>
+							<StudentProjectCard
+								Image={project.IMGURL}
+								Title={project.Course}
+								Difficulty={
+									projectData
+										? `${project.Level} | ${project.Activity_Type}`
+										: "Loading"
+								}
+							/>
+						</Link>
+					);
+				})}
+			</div>
 		</div>
 	);
 }
