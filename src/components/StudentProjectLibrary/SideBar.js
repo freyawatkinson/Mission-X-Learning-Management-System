@@ -8,10 +8,11 @@ function ProjectSideBar() {
         <div>
           <h3>SUBSCRIPTION</h3>
           <label>
+            <br></br>
             <input type="checkbox" />
             Free
           </label>
-          <br />
+          <br></br>
           <label>
             <input type="checkbox" />
             Premium
@@ -19,8 +20,10 @@ function ProjectSideBar() {
           <br />
         </div>
         <div>
+          <br></br>
           <h3>ACTIVITY TYPE</h3>
           <label>
+            <br></br>
             <input type="checkbox" />
             Animation
           </label>
@@ -42,7 +45,9 @@ function ProjectSideBar() {
           <br />
         </div>
         <div>
+          <br></br>
           <h3>YEAR LEVEL</h3>
+          <br></br>
           <label>
             <input type="checkbox" />1 - 4
           </label>
@@ -61,7 +66,9 @@ function ProjectSideBar() {
           <br />
         </div>
         <div>
+          <br></br>
           <h3>SUBJECT MATTER</h3>
+          <br></br>
           <label>
             <input type="checkbox" />
             Computer Science

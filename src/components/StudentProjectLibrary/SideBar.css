@@ -9,12 +9,11 @@
 	text-align: left;
 	font-family: "Open Sans";
 	width: 20%;
+	
 }
 
-.Checkbox-heads {
-	margin: 10px;
-	border-bottom: 1px solid #767676;
-	font-size: 16px;
-	text-transform: uppercase;
-	font-weight: 900;
+.SBContent {
+	color: #767676;
+	margin: 20px 10px;
 }
+
